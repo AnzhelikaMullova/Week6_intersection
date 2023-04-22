@@ -2,7 +2,7 @@ const intersection = (...arrays) => {
 
     let result = arrays[0].filter(el => arrays[1].includes(el))
     if (arrays.length > 2) 
-    returne intersection(result, ...arrays.slice(2))
+    return intersection(result, ...arrays.slice(2))
     return [...new Set(result)];
 
 
